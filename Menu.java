@@ -5,14 +5,15 @@ static ArrayList<Usuario> usuarios = new ArrayList<>();
 static Scanner  sc = new Scanner(System.in);
 static Almacen objAlmacen;
 public static void main(String[] args) {
- objAlmacen.seleccionarMarcaProductos();
-    //verificarUsuario(usuarios);
+    verificarUsuario(usuarios);
 }
     public static void verificarUsuario(ArrayList<Usuario> usuarios){
         usuarios.add(new Usuario("jenry","lopez123"));
         String user;
         String pass;
+        boolean r=true;
         boolean  valido=false; 
+       do{
         System.out.println("ingrese su usuario:");
         user=sc.next();
         System.out.println("ingrese su contraseña");
@@ -28,6 +29,7 @@ public static void main(String[] args) {
             }else{
                 System.out.println("error");
             }
+       }while(r);
     }    
 }
 
