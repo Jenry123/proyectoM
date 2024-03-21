@@ -1,30 +1,26 @@
-package isacc;
-
 public class Usuario {
-
-    private String usuario;
-    private String contrasena;
-
-    public  Usuario(){
+    private String nombreUsuario;
+    private String password;
+    public Usuario(){
 
     }
-
-    public  Usuario(String usuario, String contrasena){
-        this.usuario = usuario;
-        this.contrasena=contrasena;
+    public Usuario(String nombre,String  pass){
+        this.nombreUsuario=nombre;
+        this.password=pass;
     }
 
-    public void setUsuario(String usuario,String contrasena){
-        this.usuario = usuario;
-        this.contrasena=contrasena;
+    public void setNombreUsuario (String nombre) {
+        this.nombreUsuario=nombre;
     }
-
-    public String  getUsuario(){
-         return usuario;
-    }
-
-    public String getContrasena(){
-        return  contrasena;
+    public String getNombreUsuario () {
+        return this.nombreUsuario;
     }
     
+    public void setPassword(String pass){
+        this.password=pass;
+    }
+    public  String getPassword() {
+        return this.password;
+    }
+
 }
