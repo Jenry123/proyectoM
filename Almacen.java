@@ -12,10 +12,17 @@ static Inventario objInventario;
        
         String continuar;
         do{
-            System.out.println("Selccione la marca del producto: ");
-        System.out.println("\n 1- Corona");
-        System.out.println("\n 2- Dos X ");
-        System.out.println("\n 3-ver reporte total del dia");
+        System.out.println("bienvenido al sistema gestor del almacen seleccione una opcion para poder realizar las operaciones deseadas: ");
+        System.out.println("Selccione la marca del producto: ");
+        System.out.println("1-agregar Dos X");
+        System.out.println("2-actualizar producto dos x");
+        System.out.println("3-eliminar  producto dos x");
+        System.out.println("4-ver productos 2X");
+        System.out.println("5-agregar corona ");
+        System.out.println("6-actualizar producto dos x");
+        System.out.println("7-eliminar  producto dos x");
+        System.out.println("8-ver productos 2X");
+        System.out.println("9-ver reporte total del dia");
         opcion=sc.nextInt();
 
         switch (opcion) {
@@ -28,7 +35,7 @@ static Inventario objInventario;
                 break;
             
             case 3:
-
+            objInventario.imprimirTotalVentas();
                 break;
         
             default:

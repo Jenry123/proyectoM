@@ -31,9 +31,3 @@ public static void main(String[] args) {
     }    
 }
 
-/*modificaciones del diagrama:
- * 
- * no se usara herencia eliminar clase padre 
- * 
- solo se usara llamando a cada tipo de producto  en la clase almacen sin necesidad de un padre
- */
