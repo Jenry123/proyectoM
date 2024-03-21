@@ -6,6 +6,33 @@ public class DosX {
       static Scanner guardar=new Scanner(System.in);
     static ArrayList<productosDosX>lista= new ArrayList<>();
 
+    public static void seleccionarOperacion(){
+        int opcion;
+        System.out.println("sistema de Dos X");
+        System.out.println("1-agregar Dos X");
+        System.out.println("2-actualizar producto dos x");
+        System.out.println("3-eliminar  producto dos x");
+        System.out.println("4-ver productos 2X");
+        opcion=guardar.nextInt();
+
+        switch (opcion) {
+            case 1:
+                agregarProductosDosX();
+                break;
+            case 2:
+            editarProducto(lista);
+                break;
+            case 3:
+                eliminarProducto(lista);
+                break;
+            case 4:
+                mostrarProductos();
+                break;
+            default:
+                break;
+        }
+    }
+
  
      public static void agregarProductosDosX(){
         String nombre;

@@ -4,6 +4,34 @@ public class Corona{
     static Scanner guardar=new Scanner(System.in);
     static ArrayList<ProductosCorona>listaProductos=new ArrayList<>();
     static int j;
+
+    public static void seleccionarOperacion(){
+        int opcion;
+        System.out.println("sistema de corona");
+        System.out.println("1-agregar Dos corona");
+        System.out.println("2-actualizar producto corona");
+        System.out.println("3-eliminar  producto corona");
+        System.out.println("4-ver productos corona");
+        opcion=guardar.nextInt();
+      
+        switch (opcion) {
+            case 1:
+               agregarProductosCorona();
+                break;
+            case 2:
+            editarProducto(listaProductos);
+                break;
+            case 3:
+                eliminarProducto(listaProductos);
+                break;
+            case 4:
+                mostrarProductos();
+                break;
+            default:
+                break;
+        }
+       
+    }
  
     
      public static void agregarProductosCorona(){
