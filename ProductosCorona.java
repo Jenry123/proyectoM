@@ -41,5 +41,5 @@ public class ProductosCorona {
 	}
 	public long getCodigo() {
 		return idProducto;
-	}
+	}	
 }
