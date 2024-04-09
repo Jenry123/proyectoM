@@ -1,14 +1,14 @@
-public class ProductosCorona {
+public class Productos {
 
         private String nombreProducto;
         private int precio;
         private int cantidadProducto;
         private long idProducto; 
-    public ProductosCorona(){
+    public Productos(){
 
     }
 
-    public ProductosCorona(String nombre,int precio,int cantidad,long id){
+    public Productos(String nombre,int precio,int cantidad,long id){
         this.nombreProducto = nombre;
         this.precio = precio;
         this.cantidadProducto= cantidad;
