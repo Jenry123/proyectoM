@@ -36,8 +36,8 @@ static  boolean repetir=true;
     public void mostrarProductos(){
         System.out.println("productos de corona: ");
         for(Productos  x:listaProductos){
-            if(x.getCodigo()>=1111111){
-            System.out.println("nombre: \t"+x.getNombre()+"\n"+"precio: \t"+x.getPrecio()+"\n"+"cantidad: \t"+x.getCantidad()+"\n"+"id:    \t"+x.getCodigo()+"\n");
+            if(x.getCodigo()>=1000000){
+            System.out.print("nombre: \t"+x.getNombre()+"\n"+"precio: \t"+x.getPrecio()+"\n"+"cantidad: \t"+x.getCantidad()+"\n"+"id:    \t"+x.getCodigo()+"\n");
         }
     }
     }

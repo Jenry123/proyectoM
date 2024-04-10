@@ -1,17 +1,38 @@
 import java.util.Scanner; 
+import java.util.InputMismatchException;
 
 public class Almacen {
 static Scanner  sc = new Scanner(System.in);
-
+static int opcion;
 public static void menu(){
     Corona corona=new Corona();
     DosX dosx=new DosX();
-    int opcion;
+    
     boolean repetirP=true;
 
    do{
-    System.out.println("bienvenido que desea realizar 1)administrar productos corona 2)administrar productos dosX 3)ver total de productos corona 4)ver total de productos dos x 5)salir");
+   try {
+    System.out.println();
+    System.out.println("-------------------------------bienvenído admin------------------------------------");
+    System.out.println();
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|                      que desea realizar administrador                           |");
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|                      1)administrar productos corona                             |");
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|                      2)administrar productos dosX                               |");
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|                      3)ver total de productos corona                            |");
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|                      4)ver total de productos dos x                             |");
+    System.out.println("|---------------------------------------------------------------------------------|");
+    System.out.println("|                      5)salír                                                    |");
+    System.out.println("|---------------------------------------------------------------------------------|");
     opcion=sc.nextInt();
+   } catch (InputMismatchException e) {
+    System.err.println("error en "+e);
+   }
 
     switch (opcion) {
       case 1:
