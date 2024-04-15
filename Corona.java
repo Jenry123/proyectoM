@@ -32,6 +32,10 @@ static  boolean repetir=true;
         }while(repetir);
 
     }
+
+    public void verificarExistenciaProducto(){
+        super.verificarExistenciaProducto();
+    }
 @Override
     public void mostrarProductos(){
         System.out.println("productos de corona: ");

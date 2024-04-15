@@ -256,6 +256,14 @@ protected static void editarNombreProducto(){
 
 protected abstract void mostrarProductos();
  
+public void verificarExistenciaProducto(){
+
+    for(Productos p:listaProductos){
+        if(p.getCantidad()<=10){
+            System.out.println("el producto "+p.getNombre()+" necesita ser reabastecido ya que contiene pocas unidades ");
+        }
+    }
+}
 }
 
 

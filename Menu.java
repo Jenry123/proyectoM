@@ -4,19 +4,20 @@ public class Menu {
   static ArrayList<Usuario> usuarios = new ArrayList<>(); 
 static Scanner  sc = new Scanner(System.in);
 static Almacen objAlmacen;
-   
+
 public static void main(String[] args) {
    verificarUsuario(usuarios);
 }
 
 
     public static void verificarUsuario(ArrayList<Usuario> usuarios){
+      Corona corona=new Corona();
         usuarios.add(new Usuario("admin","admin"));
         String user;
         String pass;
         boolean r=true;
         boolean  valido=false; 
-        
+       
       do{
         System.out.println("----------------------------iniciar sesion----------------------------------");
         System.out.print("ingrese su usuario: ");
@@ -29,6 +30,7 @@ public static void main(String[] args) {
           }
         }
             if(valido){
+             corona.verificarExistenciaProducto();
               objAlmacen.menu();
               
             }else{
@@ -39,8 +41,6 @@ public static void main(String[] args) {
     } 
     }    
 
-//agregar alerta cuando quede menos de 50 productos
-//que no permita guardar productos con el mismo id listo 
 
 
 

@@ -36,7 +36,7 @@ public class DosX extends Inventario{
     public void mostrarProductos(){
         System.out.println("productos de dos X: ");
         for(Productos  x:listaProductos){
-           if(x.getCodigo()<=999999){
+           if(x.getCodigo()<=999999 && x.getCodigo()>800000){
             System.out.println("nombre: \t"+x.getNombre()+"\n"+"precio: \t"+x.getPrecio()+"\n"+"cantidad: \t"+x.getCantidad()+"\n"+"id:    \t"+x.getCodigo()+"\n");
            }
         }
